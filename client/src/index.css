@@ -119,4 +119,36 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .cart-sidebar-mobile {
+      width: 100vw !important;
+    }
+    
+    .navbar-mobile {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .product-grid-mobile {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    
+    .checkout-mobile {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-mobile h1 {
+      font-size: 3rem !important;
+    }
+    
+    .product-card-mobile {
+      padding: 1rem;
+    }
+  }
 }

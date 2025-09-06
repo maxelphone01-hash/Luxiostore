@@ -3,6 +3,7 @@ import { User } from "firebase/auth";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ShoppingCart, User as UserIcon } from "lucide-react";
+import { useLocation } from "wouter";
 import { Language } from "../types";
 import { getLanguageEmoji } from "../lib/language";
 
@@ -25,6 +26,7 @@ export default function Navbar({
   cartItemCount,
   t 
 }: NavbarProps) {
+  const [, setLocation] = useLocation();
   const languages: { value: Language; label: string }[] = [
     { value: 'fr', label: `${getLanguageEmoji('fr')} FR` },
     { value: 'en', label: `${getLanguageEmoji('en')} EN` },
@@ -85,10 +87,17 @@ export default function Navbar({
             </Select>
 
             {/* Auth Button */}
-            <Button variant="ghost" onClick={onLoginClick} data-testid="login-button">
-              <UserIcon className="mr-1 h-4 w-4" />
-              {user ? user.displayName || user.email : t('nav.login')}
-            </Button>
+            {user ? (
+              <Button variant="ghost" onClick={() => setLocation('/account')} data-testid="account-button">
+                <UserIcon className="mr-1 h-4 w-4" />
+                Mon espace
+              </Button>
+            ) : (
+              <Button variant="ghost" onClick={onLoginClick} data-testid="login-button">
+                <UserIcon className="mr-1 h-4 w-4" />
+                {t('nav.login')}
+              </Button>
+            )}
 
             {/* Cart Button */}
             <Button onClick={onCartClick} className="relative" data-testid="cart-button">

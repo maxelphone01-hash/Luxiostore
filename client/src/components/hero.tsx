@@ -9,7 +9,7 @@ export default function Hero({ t }: HeroProps) {
     <section className="relative bg-gradient-to-r from-background via-secondary to-background py-20" data-testid="hero-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6" data-testid="hero-title">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-mobile" data-testid="hero-title">
             <span className="gradient-gold bg-clip-text text-transparent">LUXIO</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8" data-testid="hero-subtitle">

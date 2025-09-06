@@ -153,7 +153,7 @@ export default function Checkout() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 checkout-mobile">
           {/* Left Column - Forms */}
           <div className="space-y-6">
             {/* Authentication Status */}

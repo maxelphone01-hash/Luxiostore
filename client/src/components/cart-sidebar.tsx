@@ -39,7 +39,7 @@ export default function CartSidebar({
 
   return (
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent className="w-96 overflow-y-auto" data-testid="cart-sidebar">
+      <SheetContent className="w-96 sm:w-96 cart-sidebar-mobile overflow-y-auto" data-testid="cart-sidebar">
         <SheetHeader>
           <SheetTitle className="flex items-center" data-testid="cart-title">
             <ShoppingCart className="mr-2 h-5 w-5" />
