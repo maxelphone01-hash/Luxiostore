@@ -69,8 +69,7 @@ export default function Home() {
 
   const handleAddToCart = (productId: string) => {
     addToCart(productId);
-    // Show cart sidebar when item is added
-    setCartSidebarOpen(true);
+    // Don't open cart automatically - user gets toast notification instead
   };
 
   return (

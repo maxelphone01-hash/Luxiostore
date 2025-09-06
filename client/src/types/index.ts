@@ -41,3 +41,35 @@ export interface PaymentMethod {
   status: 'active' | 'coming_soon';
   type: 'crypto' | 'fiat' | 'mixed';
 }
+
+export interface Order {
+  id: string;
+  date: string;
+  items: Array<{
+    id: string;
+    name: string;
+    quantity: number;
+    price: number;
+  }>;
+  total: number;
+  status: 'pending' | 'paid' | 'cancelled';
+  customerInfo: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    address: string;
+    city: string;
+    country: string;
+    phone: string;
+  };
+}
+
+export interface CustomerInfo {
+  firstName: string;
+  lastName: string;
+  email: string;
+  address: string;
+  city: string;
+  country: string;
+  phone: string;
+}

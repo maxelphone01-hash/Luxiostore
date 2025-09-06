@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { ShoppingCart, X, Plus, Minus } from "lucide-react";
+import { useLocation } from "wouter";
 import { CartItem, Product } from "../types";
 
 interface CartSidebarProps {
@@ -24,15 +25,16 @@ export default function CartSidebar({
   total,
   t 
 }: CartSidebarProps) {
+  const [, setLocation] = useLocation();
+
   const handleCheckout = () => {
     if (cart.length === 0) {
       alert(t('cart.empty'));
       return;
     }
     
-    // TODO: Implement checkout process with payment providers
-    alert('Redirection vers le processus de paiement...');
-    // Here would be the integration with NOWPayments and MaxelPay
+    onClose();
+    setLocation('/checkout');
   };
 
   return (

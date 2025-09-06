@@ -1,0 +1,115 @@
+Corrige et améliore mon site e-commerce 100 % statique (aucun serveur côté Replit, tout traitement serveur externalisé : Firebase Auth pour login, MaxelPay pour paiement via redirection). Le site doit inclure les points suivants :
+
+1️⃣ Sélection d’articles
+
+L’utilisateur peut ajouter des articles au panier même s’il n’est pas connecté.
+
+Panier :
+
+Liste des articles avec nom, quantité, prix unitaire et total
+
+Badge dynamique indiquant le nombre d’articles
+
+Notifications (toast) confirmant l’ajout
+
+Le panier ne s’ouvre pas automatiquement à chaque ajout
+---
+
+2️⃣ Procéder au paiement
+
+Quand l’utilisateur clique sur “Procéder au paiement” :
+
+Si l’utilisateur n’est pas connecté, rediriger vers la page checkout statique où il peut :
+
+S’inscrire ou se connecter via Firebase Auth
+
+Continuer le paiement après connexion
+
+
+Si l’utilisateur est déjà connecté, rediriger directement vers le checkout statique
+
+3️⃣ Page checkout statique
+
+Formulaire comprenant : nom, prénom, adresse, ville, pays, numéro de téléphone
+
+Numéro de référence de commande (généré ou saisi via localStorage)
+
+Récapitulatif complet du panier et total
+
+Champs pour données de livraison
+
+Bouton final pour payer via MaxelPay (redirection vers page sécurisée)
+
+Options PayU et Transak visibles mais marquées “Coming Soon”
+
+Section “Paiement sécurisé – Vos avantages” :
+
+Argent protégé jusqu’à la réception
+
+Transactions simples et sûres
+
+Assistance disponible
+
+Confiance et sérénité pour tous
+
+Statistiques affichées : nombre de clients satisfaits, nombre de commandes remplies
+
+Section partenaires / logos
+
+Notifications après paiement :
+
+Afficher un toast “Paiement réussi ! Commande n°XXX” ou “Paiement échoué” selon le retour de MaxelPay
+
+Mettre à jour l’historique de commandes dans localStorage (paid = true si paiement réussi)
+
+4️⃣ Espace client après login
+
+Profil utilisateur (email et bouton “Déconnexion” explicite)
+
+Historique des commandes stocké et récupéré via localStorage avec numéro, date, statut et total, affichant si la commande est payée
+
+Barre de navigation / mini-menu : recherche produit/article, accès au panier, accès aux commandes, changer mot de passe
+
+Notifications simples pour ajout au panier ou alertes
+
+Interface élégante et responsive
+
+Utiliser onAuthStateChanged pour mettre à jour dynamiquement l’UI, afficher les sections réservées aux utilisateurs connectés et masquer le formulaire de login
+
+5️⃣ CSS / Responsive
+
+Corriger le CSS pour que panier, email, commandes, barre de navigation et page checkout ne débordent pas
+
+Utiliser flexbox, grid et media queries pour mobile et desktop
+
+6️⃣ Images des produits
+
+Ajouter des images libres de droit pour chaque produit (Pixabay, Unsplash, Pexels)
+
+Afficher correctement les images dans le catalogue
+
+7️⃣ Bonus UX
+
+Notifications claires pour ajout au panier, mise à jour des commandes et après paiement
+
+Interface simple et intuitive
+
+Tout reste 100 % statique côté Replit, avec traitement serveur externalisé (Firebase Auth, MaxelPay via redirection)
+
+Historique commandes réel via localStorage
+
+✅ Objectif final : un site statique moderne avec :
+
+Sélection d’articles libre avant inscription
+
+Checkout structuré et sécurisé
+
+Paiement MaxelPay via redirection, PayU/Transak “Coming Soon”
+
+Espace client dynamique et responsive après connexion
+
+Historique commandes réel via localStorage
+
+Notifications après paiement et ajout au panier
+
+Section “Paiement sécurisé”, statistiques et partenaires affichés
