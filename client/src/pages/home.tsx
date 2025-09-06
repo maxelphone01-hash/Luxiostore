@@ -37,6 +37,10 @@ export default function Home() {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setUser(user);
+      // Close auth modal when user successfully logs in
+      if (user) {
+        setAuthModalOpen(false);
+      }
     });
 
     // Handle redirect result on page load
