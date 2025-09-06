@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Marie L.",
+    "city": "Paris",
+    "rating": 5,
+    "comment": "Livraison ultra rapide, produit conforme à la description. Le iPhone 15 Pro est magnifique et les prix sont vraiment compétitifs !",
+    "avatar": "M"
+  },
+  {
+    "id": "2",
+    "name": "Antoine R.",
+    "city": "Lyon",
+    "rating": 5,
+    "comment": "Service client exceptionnel ! J'ai eu un souci avec ma commande et ils ont tout résolu en moins de 24h. Très professionnel.",
+    "avatar": "A"
+  },
+  {
+    "id": "3",
+    "name": "Sophie M.",
+    "city": "Marseille",
+    "rating": 5,
+    "comment": "Les réductions sont incroyables ! J'ai économisé plus de 300€ sur ma Apple Watch Ultra. Site sérieux, je recommande.",
+    "avatar": "S"
+  },
+  {
+    "id": "4",
+    "name": "Lucas B.",
+    "city": "Toulouse",
+    "rating": 5,
+    "comment": "Qualité premium, emballage soigné et livraison express. Mon Galaxy S25 Ultra fonctionne parfaitement !",
+    "avatar": "L"
+  },
+  {
+    "id": "5",
+    "name": "Emma D.",
+    "city": "Nice",
+    "rating": 5,
+    "comment": "Interface du site moderne et intuitive. Paiement sécurisé et suivi de commande en temps réel. Parfait !",
+    "avatar": "E"
+  },
+  {
+    "id": "6",
+    "name": "Thomas K.",
+    "city": "Strasbourg",
+    "rating": 4,
+    "comment": "Très bon rapport qualité-prix. La trottinette électrique correspond exactement à mes attentes.",
+    "avatar": "T"
+  }
+]

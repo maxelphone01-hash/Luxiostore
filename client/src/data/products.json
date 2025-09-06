@@ -1,0 +1,259 @@
+{
+  "smartphones": [
+    {
+      "id": "iphone-15-pro",
+      "name": "iPhone 15 Pro",
+      "category": "smartphones",
+      "price": 1065,
+      "originalPrice": 1299,
+      "discount": 18,
+      "description": "Premium titanium smartphone with ProRes video recording",
+      "specifications": ["Titanium", "256GB", "ProRes", "48MP Camera", "A17 Pro Chip"],
+      "images": ["https://images.unsplash.com/photo-1695048133142-1a20484d2569?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#4A5568", "#3182CE", "#805AD5", "#ECC94B"],
+      "inStock": 25
+    },
+    {
+      "id": "galaxy-s25",
+      "name": "Galaxy S25 Ultra",
+      "category": "smartphones",
+      "price": 1130,
+      "originalPrice": 1449,
+      "discount": 22,
+      "description": "Ultimate productivity smartphone with S-Pen",
+      "specifications": ["S-Pen", "512GB", "200MP Camera", "Snapdragon 8 Gen 4", "120Hz Display"],
+      "images": ["https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#16A085", "#8E44AD"],
+      "inStock": 18
+    },
+    {
+      "id": "oneplus-13",
+      "name": "OnePlus 13",
+      "category": "smartphones",
+      "price": 719,
+      "originalPrice": 899,
+      "discount": 20,
+      "description": "Flagship performance with premium build quality",
+      "specifications": ["Snapdragon 8 Gen 4", "256GB", "Hasselblad Camera", "150W Charging"],
+      "images": ["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#E74C3C", "#3498DB"],
+      "inStock": 32
+    },
+    {
+      "id": "pixel-10-pro",
+      "name": "Google Pixel 10 Pro",
+      "category": "smartphones",
+      "price": 849,
+      "originalPrice": 1099,
+      "discount": 23,
+      "description": "AI-powered photography and pure Android experience",
+      "specifications": ["Tensor G5", "512GB", "AI Photography", "Magic Eraser", "7 years updates"],
+      "images": ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#FFFFFF", "#34D399"],
+      "inStock": 22
+    },
+    {
+      "id": "xiaomi-15-ultra",
+      "name": "Xiaomi 15 Ultra",
+      "category": "smartphones",
+      "price": 899,
+      "originalPrice": 1199,
+      "discount": 25,
+      "description": "Photography powerhouse with Leica collaboration",
+      "specifications": ["Snapdragon 8 Gen 4", "1TB", "Leica Camera", "120W Charging", "IP68"],
+      "images": ["https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#8B5CF6", "#F59E0B"],
+      "inStock": 15
+    },
+    {
+      "id": "huawei-pura-80",
+      "name": "Huawei Pura 80 Ultra",
+      "category": "smartphones",
+      "price": 1099,
+      "originalPrice": 1399,
+      "discount": 21,
+      "description": "Premium design with advanced camera system",
+      "specifications": ["Kirin 9100", "1TB", "Variable Aperture", "100W Wireless", "Satellite"],
+      "images": ["https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#DC2626", "#059669"],
+      "inStock": 12
+    }
+  ],
+  "smartwatches": [
+    {
+      "id": "apple-watch-ultra",
+      "name": "Apple Watch Ultra",
+      "category": "smartwatches",
+      "price": 611,
+      "originalPrice": 899,
+      "discount": 32,
+      "description": "Ultimate sports and adventure watch",
+      "specifications": ["49mm Titanium", "Cellular", "100m Water Resistant", "Action Button", "86h Battery"],
+      "images": ["https://images.unsplash.com/photo-1551816230-ef5deaed4a26?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#718096", "#F56565", "#4299E1"],
+      "inStock": 35
+    },
+    {
+      "id": "galaxy-watch",
+      "name": "Galaxy Watch 6 Classic",
+      "category": "smartwatches",
+      "price": 309,
+      "originalPrice": 429,
+      "discount": 28,
+      "description": "Classic design with rotating bezel",
+      "specifications": ["44mm", "Rotating Bezel", "Wear OS", "Body Composition", "Sleep Tracking"],
+      "images": ["https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#2D3748", "#C53030", "#3182CE"],
+      "inStock": 28
+    },
+    {
+      "id": "whoop",
+      "name": "Whoop 4.0",
+      "category": "smartwatches",
+      "price": 259,
+      "originalPrice": 399,
+      "discount": 35,
+      "description": "Advanced fitness and recovery tracking",
+      "specifications": ["24/7 Monitoring", "Strain & Recovery", "Sleep Analysis", "5-day Battery", "Waterproof"],
+      "images": ["https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#000000", "#E53E3E", "#38B2AC"],
+      "inStock": 42
+    },
+    {
+      "id": "oura-ring",
+      "name": "Oura Ring Gen3",
+      "category": "smartwatches",
+      "price": 207,
+      "originalPrice": 329,
+      "discount": 37,
+      "description": "Discreet health tracking ring",
+      "specifications": ["Sleep Tracking", "HRV", "Temperature", "7-day Battery", "Titanium"],
+      "images": ["https://images.unsplash.com/photo-1544117519-31a4b719223d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#718096", "#F6AD55", "#FC8181"],
+      "inStock": 24
+    }
+  ],
+  "sneakers": [
+    {
+      "id": "air-jordan",
+      "name": "Air Jordan 1 High",
+      "category": "sneakers",
+      "price": 149,
+      "originalPrice": 179,
+      "discount": 17,
+      "description": "Iconic basketball sneaker in classic colorway",
+      "specifications": ["High Top", "Leather Upper", "Nike Air", "Rubber Outsole", "Classic Chicago"],
+      "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#DC2626", "#000000", "#FFFFFF"],
+      "inStock": 45
+    },
+    {
+      "id": "yeezy",
+      "name": "Yeezy Boost 350 V2",
+      "category": "sneakers",
+      "price": 207,
+      "originalPrice": 249,
+      "discount": 17,
+      "description": "Iconic lifestyle sneaker with Boost technology",
+      "specifications": ["Primeknit Upper", "Boost Midsole", "Rubber Outsole", "Zebra Colorway", "Limited Edition"],
+      "images": ["https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#FFFFFF", "#000000", "#718096"],
+      "inStock": 18
+    },
+    {
+      "id": "new-balance",
+      "name": "New Balance 990v6",
+      "category": "sneakers",
+      "price": 157,
+      "originalPrice": 189,
+      "discount": 17,
+      "description": "Premium running shoes made in USA",
+      "specifications": ["Made in USA", "ENCAP Midsole", "Pigskin/Mesh", "Vibram Outsole", "990 Legacy"],
+      "images": ["https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#718096", "#2B6CB0", "#C53030"],
+      "inStock": 33
+    },
+    {
+      "id": "crocs",
+      "name": "Crocs Classic Platform",
+      "category": "sneakers",
+      "price": 49,
+      "originalPrice": 59,
+      "discount": 17,
+      "description": "Comfortable platform clogs for everyday wear",
+      "specifications": ["Platform Sole", "Croslite Foam", "Ventilation Ports", "Heel Strap", "Water Friendly"],
+      "images": ["https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200"],
+      "colors": ["#000000", "#F687B3", "#68D391"],
+      "inStock": 67
+    }
+  ],
+  "smart_home": [
+    {
+      "id": "robot-vacuum",
+      "name": "Robot Aspirateur Pro",
+      "category": "smart_home",
+      "price": 782,
+      "originalPrice": 899,
+      "discount": 13,
+      "description": "Advanced robot vacuum with smart navigation",
+      "specifications": ["LiDAR Navigation", "Auto-Empty Base", "Multi-Floor Mapping", "4000Pa Suction", "3h Runtime"],
+      "images": ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#FFFFFF"],
+      "inStock": 22
+    },
+    {
+      "id": "air-purifier",
+      "name": "Purificateur Air Smart",
+      "category": "smart_home",
+      "price": 391,
+      "originalPrice": 449,
+      "discount": 13,
+      "description": "Smart air purifier with HEPA H14 filtration",
+      "specifications": ["HEPA H14 Filter", "WiFi Connected", "70m² Coverage", "Real-time AQI", "Voice Control"],
+      "images": ["https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#FFFFFF", "#000000"],
+      "inStock": 18
+    },
+    {
+      "id": "smart-hub",
+      "name": "Hub Domotique Pro",
+      "category": "smart_home",
+      "price": 286,
+      "originalPrice": 329,
+      "discount": 13,
+      "description": "Central hub for smart home automation",
+      "specifications": ["Zigbee 3.0", "Z-Wave Plus", "7\" Touchscreen", "Voice Assistant", "Local Processing"],
+      "images": ["https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#FFFFFF"],
+      "inStock": 14
+    }
+  ],
+  "mobility": [
+    {
+      "id": "e-scooter",
+      "name": "Trottinette Électrique Pro",
+      "category": "mobility",
+      "price": 695,
+      "originalPrice": 799,
+      "discount": 13,
+      "description": "Premium electric scooter for urban commuting",
+      "specifications": ["45km Range", "25km/h Max Speed", "Foldable Design", "IP65 Waterproof", "LED Display"],
+      "images": ["https://images.unsplash.com/photo-1544191696-15693df9d0d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#DC2626"],
+      "inStock": 16
+    },
+    {
+      "id": "e-bike",
+      "name": "Vélo Électrique Urban",
+      "category": "mobility",
+      "price": 1391,
+      "originalPrice": 1599,
+      "discount": 13,
+      "description": "Modern electric bike for city commuting",
+      "specifications": ["80km Range", "Smart Assistance", "GPS Navigation", "Anti-theft System", "USB Charging"],
+      "images": ["https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"],
+      "colors": ["#000000", "#FFFFFF", "#3B82F6"],
+      "inStock": 8
+    }
+  ]
+}

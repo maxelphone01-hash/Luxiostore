@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "smartphones": {
+      "fr": "Smartphones",
+      "en": "Smartphones",
+      "pl": "Smartfony",
+      "es": "Smartphones",
+      "pt": "Smartphones",
+      "it": "Smartphone",
+      "hu": "Okostelefonok"
+    },
+    "watches": {
+      "fr": "Montres",
+      "en": "Watches",
+      "pl": "Zegarki",
+      "es": "Relojes",
+      "pt": "Relógios",
+      "it": "Orologi",
+      "hu": "Órák"
+    },
+    "fashion": {
+      "fr": "Mode",
+      "en": "Fashion",
+      "pl": "Moda",
+      "es": "Moda",
+      "pt": "Moda",
+      "it": "Moda",
+      "hu": "Divat"
+    },
+    "home": {
+      "fr": "Maison",
+      "en": "Home",
+      "pl": "Dom",
+      "es": "Hogar",
+      "pt": "Casa",
+      "it": "Casa",
+      "hu": "Otthon"
+    },
+    "mobility": {
+      "fr": "Mobilité",
+      "en": "Mobility",
+      "pl": "Mobilność",
+      "es": "Movilidad",
+      "pt": "Mobilidade",
+      "it": "Mobilità",
+      "hu": "Mobilitás"
+    },
+    "login": {
+      "fr": "Connexion",
+      "en": "Login",
+      "pl": "Logowanie",
+      "es": "Iniciar sesión",
+      "pt": "Entrar",
+      "it": "Accedi",
+      "hu": "Bejelentkezés"
+    },
+    "cart": {
+      "fr": "Panier",
+      "en": "Cart",
+      "pl": "Koszyk",
+      "es": "Carrito",
+      "pt": "Carrinho",
+      "it": "Carrello",
+      "hu": "Kosár"
+    }
+  },
+  "hero": {
+    "tagline": {
+      "fr": "Désir. Style. Innovation",
+      "en": "Desire. Style. Innovation",
+      "pl": "Pragnienie. Styl. Innowacja",
+      "es": "Deseo. Estilo. Innovación",
+      "pt": "Desejo. Estilo. Inovação",
+      "it": "Desiderio. Stile. Innovazione",
+      "hu": "Vágy. Stílus. Innováció"
+    },
+    "subtitle": {
+      "fr": "Découvrez notre collection exclusive de produits haut de gamme. Technologie premium, design raffiné, prix exceptionnels.",
+      "en": "Discover our exclusive collection of premium products. Premium technology, refined design, exceptional prices.",
+      "pl": "Odkryj naszą ekskluzywną kolekcję produktów premium. Technologia premium, wyrafinowany design, wyjątkowe ceny.",
+      "es": "Descubre nuestra colección exclusiva de productos premium. Tecnología premium, diseño refinado, precios excepcionales.",
+      "pt": "Descubra nossa coleção exclusiva de produtos premium. Tecnologia premium, design refinado, preços excepcionais.",
+      "it": "Scopri la nostra collezione esclusiva di prodotti premium. Tecnologia premium, design raffinato, prezzi eccezionali.",
+      "hu": "Fedezze fel prémium termékek exkluzív kollekcióját. Prémium technológia, kifinomult design, kivételes árak."
+    },
+    "free_shipping": {
+      "fr": "Livraison Gratuite",
+      "en": "Free Shipping",
+      "pl": "Darmowa Dostawa",
+      "es": "Envío Gratis",
+      "pt": "Frete Grátis",
+      "it": "Spedizione Gratuita",
+      "hu": "Ingyenes Szállítás"
+    },
+    "premium_warranty": {
+      "fr": "Garantie Premium",
+      "en": "Premium Warranty",
+      "pl": "Gwarancja Premium",
+      "es": "Garantía Premium",
+      "pt": "Garantia Premium",
+      "it": "Garanzia Premium",
+      "hu": "Prémium Garancia"
+    },
+    "up_to_discount": {
+      "fr": "Jusqu'à -37%",
+      "en": "Up to -37%",
+      "pl": "Do -37%",
+      "es": "Hasta -37%",
+      "pt": "Até -37%",
+      "it": "Fino a -37%",
+      "hu": "Akár -37%"
+    }
+  },
+  "sections": {
+    "smartphones_title": {
+      "fr": "Smartphones Haut de Gamme",
+      "en": "Premium Smartphones",
+      "pl": "Smartfony Premium",
+      "es": "Smartphones Premium",
+      "pt": "Smartphones Premium",
+      "it": "Smartphone Premium",
+      "hu": "Prémium Okostelefonok"
+    },
+    "watches_title": {
+      "fr": "Montres & Bracelets Connectés",
+      "en": "Smartwatches & Fitness Bands",
+      "pl": "Smartwatche i Opaski Fitness",
+      "es": "Smartwatches y Pulseras de Fitness",
+      "pt": "Smartwatches e Pulseiras Fitness",
+      "it": "Smartwatch e Braccialetti Fitness",
+      "hu": "Okosórák és Fitness Karkötők"
+    },
+    "add_to_cart": {
+      "fr": "Ajouter au panier",
+      "en": "Add to cart",
+      "pl": "Dodaj do koszyka",
+      "es": "Añadir al carrito",
+      "pt": "Adicionar ao carrinho",
+      "it": "Aggiungi al carrello",
+      "hu": "Kosárba tesz"
+    }
+  },
+  "cart": {
+    "empty": {
+      "fr": "Votre panier est vide",
+      "en": "Your cart is empty",
+      "pl": "Twój koszyk jest pusty",
+      "es": "Tu carrito está vacío",
+      "pt": "Seu carrinho está vazio",
+      "it": "Il tuo carrello è vuoto",
+      "hu": "A kosara üres"
+    },
+    "total": {
+      "fr": "Total:",
+      "en": "Total:",
+      "pl": "Razem:",
+      "es": "Total:",
+      "pt": "Total:",
+      "it": "Totale:",
+      "hu": "Összesen:"
+    },
+    "checkout": {
+      "fr": "Procéder au paiement",
+      "en": "Proceed to checkout",
+      "pl": "Przejdź do kasy",
+      "es": "Proceder al pago",
+      "pt": "Finalizar compra",
+      "it": "Procedi al checkout",
+      "hu": "Fizetés"
+    }
+  }
+}
