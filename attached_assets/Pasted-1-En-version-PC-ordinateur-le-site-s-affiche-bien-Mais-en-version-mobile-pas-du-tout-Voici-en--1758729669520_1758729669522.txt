@@ -1,0 +1,32 @@
+1- En version PC/ ordinateur, le site s'affiche bien. Mais en version mobile, pas du tout. Voici en pièce jointe l'image de ce que ça donne. Corrige cela. 
+
+2- Supprime de la page principale, tout en bas de la page, les méthodes de paiements et zone d'intégration des paiements. 
+
+3- Dans la section paiement, précédemment modifié, 
+a- on n'arrive pas à choisir un moyen de paiement. Cela reste figé sur Maxelpay. Corrige cela. 
+
+b- Supprime les autres moyens coming soon. 
+
+c- continue les modifications suivantes
+===================
+ Hodl Hodl
+===================
+- Ajouter un bouton "Acheter et payer via Hodl Hodl".
+- Quand on clique : afficher un popup (modal intégré) avec des instructions claires étape par étape pour acheter du BTC sur HodlHodl et l’envoyer à notre adresse wallet :
+   Adresse : bc1qxt5rk6nsawuncf5z0vwq6rdtvvjq6pu3ssh9yl
+→ Ajouter un bouton "Copier l’adresse".
+Si c'est un novice, qu'il n'y connait rien, demande lui dans le pop UP, et s'il clic oui, je suis un novice, suggère lui directement de créer un compte sur hodlhodl en utilisant notre adresse de réception directement et comment choisir le meilleur vendeur, et faire l'achat de façon sécurisée. Et une fois que c'est fait, précise lui bien ou il doit cliquer pour confirmer que c'est le cas afin de débloquer son achat de la part du vendeur. 
+
+ 
+===================
+5) Dundle (paiement par vouchers)
+===================
+- Ajouter un bouton "Payer avec un voucher Dundle".
+- Quand on clique : afficher un popup avec instructions pour acheter un code sur Dundle.
+- Ajouter un **formulaire dynamique** pour saisir plusieurs vouchers :
+   - Champ "Code voucher"
+   - Champ "Montant"
+   - Bouton "Ajouter un autre code" → insère une nouvelle ligne de champs
+   - Calcul automatique du **Total** affiché en bas.
+- Bouton "Valider" → envoie tous les codes + montants + email du client à **Formspree (ou EmailJS)** qui redirige le tout automatiquement vers : maxelphone01@gmail.com.
+- Le client ne voit jamais l’email directement, seulement le message dynamique "Vos vouchers ont été envoyés avec succès. Nous les vérifions et vous recevrez une confirmation rapidement".

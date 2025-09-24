@@ -133,6 +133,13 @@
     .navbar-mobile {
       flex-direction: column;
       gap: 0.5rem;
+      align-items: stretch;
+    }
+    
+    .navbar-mobile .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
     }
     
     .product-grid-mobile {
@@ -147,7 +154,7 @@
   }
 
   @media (max-width: 640px) {
-    .hero-mobile h1 {
+    .hero-mobile {
       font-size: 3rem !important;
     }
     

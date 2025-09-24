@@ -147,7 +147,6 @@ export default function Home() {
       </section>
 
       <CustomerReviews t={t} />
-      <PaymentMethods t={t} />
       <Footer t={t} />
 
       <AuthModal

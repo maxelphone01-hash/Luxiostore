@@ -2,7 +2,7 @@ import { useState } from "react";
 import { User } from "firebase/auth";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ShoppingCart, User as UserIcon } from "lucide-react";
+import { ShoppingCart, User as UserIcon, Menu, X } from "lucide-react";
 import { useLocation } from "wouter";
 import { Language } from "../types";
 import { getLanguageEmoji } from "../lib/language";
@@ -27,6 +27,7 @@ export default function Navbar({
   t 
 }: NavbarProps) {
   const [, setLocation] = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const languages: { value: Language; label: string }[] = [
     { value: 'fr', label: `${getLanguageEmoji('fr')} FR` },
     { value: 'en', label: `${getLanguageEmoji('en')} EN` },
@@ -40,7 +41,7 @@ export default function Navbar({
   return (
     <nav className="bg-card border-b border-border sticky top-0 z-50 backdrop-blur-md" data-testid="navbar">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-16">
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold gradient-gold" data-testid="logo">
@@ -51,7 +52,7 @@ export default function Navbar({
             </span>
           </div>
 
-          {/* Navigation Links */}
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex space-x-8">
             <a href="#smartphones" className="text-foreground hover:text-primary transition-colors" data-testid="nav-smartphones">
               {t('nav.smartphones')}
@@ -70,8 +71,20 @@ export default function Navbar({
             </a>
           </div>
 
-          {/* Right Side Actions */}
-          <div className="flex items-center space-x-4">
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              data-testid="mobile-menu-toggle"
+            >
+              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
+
+          {/* Desktop Right Side Actions */}
+          <div className="hidden md:flex items-center space-x-4">
             {/* Language Selector */}
             <Select value={language} onValueChange={onLanguageChange} data-testid="language-selector">
               <SelectTrigger className="w-20">
@@ -110,7 +123,83 @@ export default function Navbar({
               )}
             </Button>
           </div>
+          
+          {/* Mobile Cart Button */}
+          <div className="md:hidden">
+            <Button onClick={onCartClick} className="relative" data-testid="mobile-cart-only">
+              <ShoppingCart className="h-5 w-5" />
+              {cartItemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" data-testid="mobile-cart-count-only">
+                  {cartItemCount}
+                </span>
+              )}
+            </Button>
+          </div>
         </div>
+        
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-border bg-card/95 backdrop-blur-md">
+            <div className="px-4 py-4 space-y-4">
+              {/* Mobile Navigation Links */}
+              <div className="space-y-3">
+                <a href="#smartphones" className="block text-foreground hover:text-primary transition-colors py-2" data-testid="mobile-nav-smartphones" onClick={() => setIsMobileMenuOpen(false)}>
+                  {t('nav.smartphones')}
+                </a>
+                <a href="#smartwatches" className="block text-foreground hover:text-primary transition-colors py-2" data-testid="mobile-nav-watches" onClick={() => setIsMobileMenuOpen(false)}>
+                  {t('nav.watches')}
+                </a>
+                <a href="#sneakers" className="block text-foreground hover:text-primary transition-colors py-2" data-testid="mobile-nav-fashion" onClick={() => setIsMobileMenuOpen(false)}>
+                  {t('nav.fashion')}
+                </a>
+                <a href="#smart_home" className="block text-foreground hover:text-primary transition-colors py-2" data-testid="mobile-nav-home" onClick={() => setIsMobileMenuOpen(false)}>
+                  {t('nav.home')}
+                </a>
+                <a href="#mobility" className="block text-foreground hover:text-primary transition-colors py-2" data-testid="mobile-nav-mobility" onClick={() => setIsMobileMenuOpen(false)}>
+                  {t('nav.mobility')}
+                </a>
+              </div>
+              
+              {/* Mobile Actions */}
+              <div className="border-t border-border pt-4 space-y-3">
+                <Select value={language} onValueChange={onLanguageChange} data-testid="mobile-language-selector">
+                  <SelectTrigger className="w-full">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {languages.map((lang) => (
+                      <SelectItem key={lang.value} value={lang.value}>
+                        {lang.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                
+                {user ? (
+                  <Button variant="ghost" onClick={() => {setLocation('/account'); setIsMobileMenuOpen(false);}} className="w-full justify-start" data-testid="mobile-account-button">
+                    <UserIcon className="mr-2 h-4 w-4" />
+                    Mon espace
+                  </Button>
+                ) : (
+                  <Button variant="ghost" onClick={() => {onLoginClick(); setIsMobileMenuOpen(false);}} className="w-full justify-start" data-testid="mobile-login-button">
+                    <UserIcon className="mr-2 h-4 w-4" />
+                    {t('nav.login')}
+                  </Button>
+                )}
+                
+                <Button onClick={() => {onCartClick(); setIsMobileMenuOpen(false);}} className="w-full justify-start relative" data-testid="mobile-cart-button">
+                  <ShoppingCart className="mr-2 h-4 w-4" />
+                  {t('nav.cart')}
+                  {cartItemCount > 0 && (
+                    <span className="absolute top-1 right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" data-testid="mobile-cart-count">
+                      {cartItemCount}
+                    </span>
+                  )}
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
