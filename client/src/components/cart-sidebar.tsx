@@ -33,8 +33,18 @@ export default function CartSidebar({
       return;
     }
     
+    console.log('Navigating to checkout, cart items:', cart.length);
+    console.log('Current cart:', cart);
+    
+    // Close the modal first
     onClose();
-    setLocation('/checkout');
+    
+    // Navigate after a brief delay to ensure the modal is closed
+    setTimeout(() => {
+      console.log('Setting location to /checkout');
+      setLocation('/checkout');
+      console.log('Location set to /checkout');
+    }, 200);
   };
 
   return (
@@ -129,7 +139,7 @@ export default function CartSidebar({
               <Button 
                 onClick={handleCheckout}
                 className="w-full"
-                data-testid="checkout-button"
+                data-testid="proceed-checkout-button"
               >
                 {t('cart.checkout')}
               </Button>

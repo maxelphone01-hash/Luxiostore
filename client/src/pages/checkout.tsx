@@ -60,12 +60,13 @@ export default function Checkout() {
     return () => unsubscribe();
   }, []);
 
-  // Redirect if cart is empty
+  // Redirect if cart is empty after initial load
   useEffect(() => {
-    if (cart.length === 0) {
+    if (cart.length === 0 && allProducts && Object.keys(allProducts).length > 0) {
+      console.log('Checkout: redirecting to home, cart is empty');
       setLocation('/');
     }
-  }, [cart, setLocation]);
+  }, [cart, setLocation, allProducts]);
 
   const handleGoogleSignIn = () => {
     signInWithGoogle();
