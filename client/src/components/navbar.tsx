@@ -43,7 +43,7 @@ export default function Navbar({
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold gradient-gold bg-clip-text text-transparent" data-testid="logo">
+            <h1 className="text-2xl font-bold gradient-gold" data-testid="logo">
               LUXIO
             </h1>
             <span className="ml-2 text-sm text-muted-foreground" data-testid="tagline">

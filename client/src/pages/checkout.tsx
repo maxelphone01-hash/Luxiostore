@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ShoppingCart, CreditCard, Shield, CheckCircle, Users } from "lucide-react";
+import { ShoppingCart, CreditCard, Shield, CheckCircle, Users, Gift, Bitcoin } from "lucide-react";
 import { auth } from "../lib/firebase";
 import { useCart } from "../hooks/use-cart";
 import { useLanguage } from "../hooks/use-language";
@@ -360,6 +360,42 @@ export default function Checkout() {
                       </p>
                     </div>
                     <Badge variant="outline">BIENTÔT</Badge>
+                  </div>
+                </div>
+                
+                <div className="border-2 border-green-500 rounded-lg p-4 bg-green-50 dark:bg-green-950">
+                  <div className="flex items-center space-x-3">
+                    <Gift className="h-6 w-6 text-green-600" />
+                    <div>
+                      <h4 className="font-semibold text-green-800 dark:text-green-200">Dundle</h4>
+                      <p className="text-sm text-green-600 dark:text-green-400">
+                        Cartes cadeaux & vouchers
+                      </p>
+                    </div>
+                    <Badge className="bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-200">ACTIF</Badge>
+                  </div>
+                </div>
+
+                <div className="border-2 border-orange-500 rounded-lg p-4 bg-orange-50 dark:bg-orange-950">
+                  <div className="flex items-center space-x-3">
+                    <Bitcoin className="h-6 w-6 text-orange-600" />
+                    <div>
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-200">Hodl Hodl</h4>
+                      <p className="text-sm text-orange-600 dark:text-orange-400">
+                        Achat Bitcoin et paiement direct
+                      </p>
+                    </div>
+                    <Badge className="bg-orange-100 text-orange-800 dark:bg-orange-800 dark:text-orange-200">ACTIF</Badge>
+                  </div>
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-900 rounded-md">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 font-medium mb-2">
+                      Pas de crypto ? Achetez sur Hodl Hodl et envoyez directement :
+                    </p>
+                    <div className="bg-white dark:bg-gray-800 p-2 rounded border">
+                      <p className="text-xs font-mono text-gray-800 dark:text-gray-200 break-all">
+                        bc1qxt5rk6nsawuncf5z0vwq6rdtvvjq6pu3ssh9yl
+                      </p>
+                    </div>
                   </div>
                 </div>
                 
